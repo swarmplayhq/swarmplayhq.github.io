@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SwarmPlay: your PC, like a console</title>
+<meta name="description" content="SwarmPlay is a console-style home screen for Linux. PS5, PS4 and PC games in one place, played from the sofa with a controller. Free and open source.">
+<meta name="theme-color" content="#06102e">
+<link rel="canonical" href="https://swarmplayhq.github.io/">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/icon-180.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SwarmPlay">
+<meta property="og:title" content="SwarmPlay: your PC, like a console">
+<meta property="og:description" content="PS5, PS4 and PC games on Linux, from the sofa, with a controller. Free and open source.">
+<meta property="og:url" content="https://swarmplayhq.github.io/">
+<meta property="og:image" content="https://swarmplayhq.github.io/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
+<script>
+  // Before the first paint: the saved theme (else dark), and room for site.js's entrances.
+  document.documentElement.classList.add("js");
+  try { var t = localStorage.getItem("theme"); if (t === "light" || t === "dark") document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<script src="assets/site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top" data-top>
+  <nav class="wrap nav" aria-label="Main">
+    <a class="brand" href="#top" aria-label="SwarmPlay, back to the top">
+      <img src="assets/logo.svg" width="32" height="32" alt="">
+      <span>SwarmPlay</span>
+    </a>
+    <div class="links">
+      <a href="#home">Features</a>
+      <a href="#get">Install</a>
+      <a href="#faq">Questions</a>
+      <a href="https://github.com/swarmplayhq/swarmplay" rel="noopener">GitHub</a>
+    </div>
+    <button class="round theme" type="button" data-theme-toggle aria-label="Switch to light theme">
+      <svg class="sun" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg>
+      <svg class="moon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>
+    </button>
+  </nav>
+</header>
+
+<main id="main">
+
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <p class="kicker reveal">For Linux · free and open source</p>
+      <h1 class="disp reveal">Your PC,<br>like a console.</h1>
+      <p class="lead reveal">SwarmPlay is a home screen for your games. PS5, PS4 and PC games in one place, each with its own art and trailer, played from the sofa with a controller.</p>
+      <div class="cta reveal">
+        <a class="btn btn-white" href="#get">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.8v14.4a.8.8 0 0 0 1.2.7l11.3-7.2a.8.8 0 0 0 0-1.4L8.2 4.1A.8.8 0 0 0 7 4.8z"/></svg>
+          Get SwarmPlay
+        </a>
+        <a class="btn btn-ghost" href="https://github.com/swarmplayhq/swarmplay" rel="noopener">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.1.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+          Source code
+        </a>
+      </div>
+      <p class="meta reveal">Version <span data-version>1.29.0</span> · <a href="https://github.com/swarmplayhq/swarmplay/releases" rel="noopener">what's new</a></p>
+    </div>
+    <figure class="hero-shot reveal">
+      <button class="shot" type="button" data-zoom aria-label="Enlarge: the Home screen">
+        <img src="assets/shots/home.webp" width="1600" height="900" alt="SwarmPlay's Home screen: a row of games across the top, Balatro chosen, with its background art, logo and a Play button.">
+      </button>
+    </figure>
+  </div>
+</section>
+
+<section class="wrap home" id="home" aria-labelledby="home-title">
+  <header class="sec-head reveal">
+    <p class="kicker">Features</p>
+    <h2 class="disp" id="home-title">This is Home.</h2>
+    <p class="lead">Everything you'd expect from a console, on the PC you already have. It works with a controller, a keyboard or a mouse.</p>
+  </header>
+
+  <article class="feature reveal">
+    <div class="f-text">
+      <p class="kicker">Welcome</p>
+      <h3 class="disp">Everything at a glance.</h3>
+      <p>Your controller, the free space, what's downloading and whether an update is ready, all before you pick a game. Then your games follow across the top, newest first.</p>
+    </div>
+    <button class="shot" type="button" data-zoom aria-label="Enlarge: the Welcome tile">
+      <img src="assets/shots/welcome.webp" width="1600" height="900" loading="lazy" alt="The Welcome tile, with cards for controller, storage, downloads, new games, your games and updates.">
+    </button>
+  </article>
+
+  <article class="feature flip reveal">
+    <div class="f-text">
+      <p class="kicker">Game Hub</p>
+      <h3 class="disp">You know before you press Play.</h3>
+      <p>Every game gets its own page: how well it runs, which versions you have, trailers and screenshots, its size and where its files are.</p>
+    </div>
+    <button class="shot" type="button" data-zoom aria-label="Enlarge: a Game Hub">
+      <img src="assets/shots/hub.webp" width="1600" height="900" loading="lazy" alt="Balatro's Game Hub: its logo, genres, a Play button and a row of screenshots.">
+    </button>
+  </article>
+
+  <article class="feature reveal">
+    <div class="f-text">
+      <p class="kicker">Library</p>
+      <h3 class="disp">PS5, PS4 and PC, in one place.</h3>
+      <p>Search, filter by genre and sort however you like. PS5 games run on KytyPS5 and PS4 games on shadPS4, which SwarmPlay installs and keeps up to date for you. PC games run natively, or with Wine and Proton.</p>
+    </div>
+    <button class="shot" type="button" data-zoom aria-label="Enlarge: the Library">
+      <img src="assets/shots/library.webp" width="1600" height="900" loading="lazy" alt="The Library on Installed: covers of Stardew Valley, Hollow Knight Silksong, Hades II, Baldur's Gate 3, Cyberpunk 2077, Dead Cells and Balatro.">
+    </button>
+  </article>
+
+  <article class="feature flip reveal">
+    <div class="f-text">
+      <p class="kicker">Control Center</p>
+      <h3 class="disp">One button away.</h3>
+      <p>Press the controller's home button for downloads, notifications and power, from anywhere in SwarmPlay.</p>
+    </div>
+    <button class="shot" type="button" data-zoom aria-label="Enlarge: the Control Center">
+      <img src="assets/shots/control-center.webp" width="1600" height="900" loading="lazy" alt="The Control Center at the bottom of the screen: Downloads and Notifications cards, and Library, Settings, Controls and Quit buttons.">
+    </button>
+  </article>
+
+  <article class="feature reveal">
+    <div class="f-text">
+      <p class="kicker">Settings</p>
+      <h3 class="disp">Settings you already know.</h3>
+      <p>Sound, storage for each drive, theme and notifications, laid out like a console's. Add another drive and choose where games go, all with a controller.</p>
+    </div>
+    <button class="shot" type="button" data-zoom aria-label="Enlarge: Settings, Storage">
+      <img src="assets/shots/settings-storage.webp" width="1600" height="900" loading="lazy" alt="Settings, Storage: a drive's size and free space, split into games, downloads, media and other.">
+    </button>
+  </article>
+
+  <div class="extras">
+    <div class="card reveal">
+      <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7.5 8h9a4.5 4.5 0 0 1 4.4 5.4l-.8 3.9a2.3 2.3 0 0 1-4 .9L14.3 16H9.7l-1.8 2.2a2.3 2.3 0 0 1-4-.9l-.8-3.9A4.5 4.5 0 0 1 7.5 8z"/><path d="M8 11v3M6.5 12.5h3"/><circle cx="16" cy="11.5" r=".6" fill="currentColor"/><circle cx="17.5" cy="13.3" r=".6" fill="currentColor"/></svg>
+      <h3>Any controller</h3>
+      <p>DualSense, DualShock 4, Xbox and others, over Bluetooth or USB. In Windows games a DualShock works as an Xbox controller.</p>
+    </div>
+    <div class="card reveal">
+      <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11a8 8 0 0 0-14.6-4.5M4 4v3h3M4 13a8 8 0 0 0 14.6 4.5M20 20v-3h-3"/></svg>
+      <h3>Up to date by itself</h3>
+      <p>SwarmPlay tells you when a new version is out and updates in place. Its emulators update too, without touching your saves.</p>
+    </div>
+    <div class="card reveal">
+      <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15zM10 20.5a2 2 0 0 0 4 0"/></svg>
+      <h3>Notifications</h3>
+      <p>When a download finishes, a game is ready or space runs low. Keep them all in one list, or turn on Do not disturb.</p>
+    </div>
+    <div class="card reveal">
+      <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 1 0 0 18c1.1 0 1.7-.8 1.7-1.6 0-1-.8-1.4-.8-2.3 0-.9.7-1.6 1.6-1.6H16a5 5 0 0 0 5-5C21 6.4 17 3 12 3z"/><circle cx="7.5" cy="11" r="1" fill="currentColor"/><circle cx="10" cy="7" r="1" fill="currentColor"/><circle cx="15" cy="7.5" r="1" fill="currentColor"/></svg>
+      <h3>Your look</h3>
+      <p>Pick a wallpaper and an accent colour. A game's own art always shows behind it.</p>
+    </div>
+    <div class="card reveal">
+      <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+      <h3>Made for Bazzite</h3>
+      <p>Works on Fedora Atomic desktops such as Bazzite, as well as Ubuntu, Fedora, Arch and SteamOS.</p>
+    </div>
+    <div class="card reveal">
+      <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+      <h3>Open source</h3>
+      <p>Free, under the MIT License, written in Rust. Read it, change it, or send a fix.</p>
+    </div>
+  </div>
+</section>
+
+<section class="get" id="get" aria-labelledby="get-title">
+  <div class="wrap get-grid">
+    <header class="reveal">
+      <p class="kicker">Install</p>
+      <h2 class="disp" id="get-title">Ready in a minute.</h2>
+      <p class="lead">Open a terminal and run one line. SwarmPlay then shows up in your app menu.</p>
+    </header>
+
+    <div class="panel reveal">
+      <div class="tabs" role="tablist" aria-label="How to install">
+        <button type="button" role="tab" id="tab-cmd" aria-controls="panel-cmd" aria-selected="true">One command</button>
+        <button type="button" role="tab" id="tab-file" aria-controls="panel-file" aria-selected="false" tabindex="-1">Download the file</button>
+      </div>
+      <div class="tab-panel" id="panel-cmd" role="tabpanel" aria-labelledby="tab-cmd">
+        <div class="cmd">
+          <code tabindex="0" aria-label="Install command"><span class="p">$ </span><span data-command>curl -fsSL https://github.com/swarmplayhq/swarmplay/releases/latest/download/swarmplay-linux-x86_64.tar.gz | tar xz &amp;&amp; ./swarmplay-linux-x86_64/install.sh</span></code>
+          <button class="copy" type="button" data-copy>Copy</button>
+        </div>
+        <p class="small">It downloads the latest version, puts it in <code>~/.local/bin</code> and adds it to the app menu. No root password needed.</p>
+      </div>
+      <div class="tab-panel" id="panel-file" role="tabpanel" aria-labelledby="tab-file" hidden>
+        <a class="btn btn-white" href="https://github.com/swarmplayhq/swarmplay/releases/latest/download/swarmplay-linux-x86_64.tar.gz">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>
+          swarmplay-linux-x86_64.tar.gz
+        </a>
+        <p class="small">Unpack it and run <code>install.sh</code> in the folder. To remove SwarmPlay later, run <code>install.sh --uninstall</code>; your settings stay.</p>
+      </div>
+    </div>
+
+    <ul class="needs reveal" aria-label="What your PC needs">
+      <li><strong>64-bit Linux</strong> from 2022 on: Ubuntu 22.04, Debian 12, Fedora 36, Bazzite, Arch, SteamOS 3 or newer.</li>
+      <li><strong>A graphics card with Vulkan drivers</strong>, for PS5 and PS4 games.</li>
+      <li><strong>Your games.</strong> Add the folders where they are; SwarmPlay finds them.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="wrap faq" id="faq" aria-labelledby="faq-title">
+  <h2 class="disp reveal" id="faq-title">Questions</h2>
+  <div class="qa">
+    <details class="reveal">
+      <summary>Is it free?</summary>
+      <p>Yes. SwarmPlay is free and open source, under the MIT License. There's no account, no ads and nothing to pay.</p>
+    </details>
+    <details class="reveal">
+      <summary>Do I need a PlayStation?</summary>
+      <p>No. PS5 games run on the <a href="https://github.com/KytyPS5/KytyPS5" rel="noopener">KytyPS5</a> emulator and PS4 games on <a href="https://github.com/shadps4-emu/shadPS4" rel="noopener">shadPS4</a>, right on your PC. SwarmPlay sets both up for you. You bring the games you own.</p>
+    </details>
+    <details class="reveal">
+      <summary>Will every game run?</summary>
+      <p>Not yet. PS5 and PS4 emulation is still being worked on, so some games don't start or don't get far. Each game's Hub shows how far it gets, so you know before you press Play. PC games show their ProtonDB rating.</p>
+    </details>
+    <details class="reveal">
+      <summary>How does it update?</summary>
+      <p>SwarmPlay checks for a new version by itself, lets you know with a notification, and updates in place when you say so. Every version is on <a href="https://github.com/swarmplayhq/swarmplay/releases" rel="noopener">GitHub</a>.</p>
+    </details>
+    <details class="reveal">
+      <summary>How is it related to Azrak?</summary>
+      <p>SwarmPlay started as a fork of <a href="https://github.com/AzrakHQ/azrak-launcher" rel="noopener">Azrak Launcher</a>, with a console-style redesign and fixes for Fedora Atomic desktops. It keeps Azrak's folders, so switching keeps your games and settings.</p>
+    </details>
+    <details class="reveal">
+      <summary>Something doesn't work. Where do I ask?</summary>
+      <p>Open an issue on <a href="https://github.com/swarmplayhq/swarmplay/issues" rel="noopener">GitHub</a> and say what you did and what happened. A screenshot helps.</p>
+    </details>
+  </div>
+</section>
+
+<section class="end" aria-labelledby="end-title">
+  <div class="wrap reveal">
+    <img src="assets/logo.svg" width="72" height="72" alt="">
+    <h2 class="disp" id="end-title">Your sofa is waiting.</h2>
+    <a class="btn btn-white" href="#get">Get SwarmPlay</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>SwarmPlay is free software under the <a href="https://github.com/swarmplayhq/swarmplay/blob/main/LICENSE" rel="noopener">MIT License</a>, based on <a href="https://github.com/AzrakHQ/azrak-launcher" rel="noopener">Azrak Launcher</a>.</p>
+    <p>SwarmPlay is not affiliated with or endorsed by Sony Interactive Entertainment. PlayStation, PS4 and PS5 are trademarks of their owners. Game art in the screenshots belongs to its owners.</p>
+  </div>
+</footer>
+
+<dialog class="zoom" data-zoom-dialog aria-label="Screenshot">
+  <img alt="">
+  <button class="round close" type="button" data-zoom-close aria-label="Close">
+    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+</dialog>
+</body>
+</html>
